@@ -28,7 +28,7 @@ interface TeamMember {
 
 const teamMembers: TeamMember[] = [
   {
-    name: "Dr. Ayesha Rahman",
+    name: "Dr. Mohammad Shidujaman",
     role: "Project Supervisor",
     type: "supervisor",
     email: "ayesha.rahman@university.edu",
@@ -37,16 +37,16 @@ const teamMembers: TeamMember[] = [
     photo: "https://api.dicebear.com/9.x/initials/svg?seed=AR&backgroundColor=0d9488",
   },
   {
-    name: "Farhan Ahmed",
+    name: "Tanvir Mahmud",
     role: "Lead Developer & AI Engineer",
     type: "member",
-    email: "farhan.ahmed@email.com",
+    email: "6209tanvir@email.com",
     github: "farhan-ahmed",
     linkedin: "farhan-ahmed",
     photo: "https://api.dicebear.com/9.x/initials/svg?seed=FA&backgroundColor=0d9488",
   },
   {
-    name: "Nusrat Jahan",
+    name: "Atia Ibnat Mouni",
     role: "NLP & LLM Specialist",
     type: "member",
     email: "nusrat.jahan@email.com",
@@ -55,7 +55,7 @@ const teamMembers: TeamMember[] = [
     photo: "https://api.dicebear.com/9.x/initials/svg?seed=NJ&backgroundColor=0d9488",
   },
   {
-    name: "Rafiul Islam",
+    name: "Tawhid Bin Moslim",
     role: "Hardware & Robotics Engineer",
     type: "member",
     email: "rafiul.islam@email.com",
@@ -64,7 +64,7 @@ const teamMembers: TeamMember[] = [
     photo: "https://api.dicebear.com/9.x/initials/svg?seed=RI&backgroundColor=0d9488",
   },
   {
-    name: "Tasnia Mim",
+    name: "Abir Mahmud",
     role: "Speech Processing Engineer",
     type: "member",
     email: "tasnia.mim@email.com",
@@ -73,7 +73,7 @@ const teamMembers: TeamMember[] = [
     photo: "https://api.dicebear.com/9.x/initials/svg?seed=TM&backgroundColor=0d9488",
   },
   {
-    name: "Sakib Hossain",
+    name: "Arman Uddin",
     role: "Frontend & Integration Developer",
     type: "member",
     email: "sakib.hossain@email.com",
