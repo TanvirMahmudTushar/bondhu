@@ -45,7 +45,7 @@ const teamMembers: TeamMember[] = [
     email: "6209tanvir@email.com",
     github: "farhan-ahmed",
     linkedin: "farhan-ahmed",
-    photo: "https://api.dicebear.com/9.x/initials/svg?seed=FA&backgroundColor=0d9488",
+    photo: "https://api.dicebear.com/9.x/initials/svg?seed=TM&backgroundColor=0d9488",
   },
   {
     name: "Atia Ibnat Mouni",
@@ -63,7 +63,7 @@ const teamMembers: TeamMember[] = [
     email: "rafiul.islam@email.com",
     github: "rafiul-islam",
     linkedin: "rafiul-islam",
-    photo: "https://api.dicebear.com/9.x/initials/svg?seed=RI&backgroundColor=0d9488",
+    photo: "https://api.dicebear.com/9.x/initials/svg?seed=TBM&backgroundColor=0d9488",
   },
   {
     name: "Abir Mahmud",
@@ -81,7 +81,7 @@ const teamMembers: TeamMember[] = [
     email: "sakib.hossain@email.com",
     github: "sakib-hossain",
     linkedin: "sakib-hossain",
-    photo: "https://api.dicebear.com/9.x/initials/svg?seed=SH&backgroundColor=0d9488",
+    photo: "https://api.dicebear.com/9.x/initials/svg?seed=AM&backgroundColor=0d9488",
   },
 ]
 
