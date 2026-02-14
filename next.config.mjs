@@ -49,6 +49,7 @@
  */
 const nextConfig = {
   output: "export",
+  basePath: "/bondhu",
   trailingSlash: true,
   images: {
     unoptimized: true,
