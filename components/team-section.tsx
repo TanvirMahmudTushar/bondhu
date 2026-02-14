@@ -34,7 +34,7 @@ const teamMembers: TeamMember[] = [
     email: "ayesha.rahman@university.edu",
     github: "ayesha-rahman",
     linkedin: "ayesha-rahman",
-    photo: "https://api.dicebear.com/9.x/initials/svg?seed=AR&backgroundColor=0d9488",
+    photo: "/shidujaman.jpg",
   },
   {
     name: "Tanvir Mahmud",
