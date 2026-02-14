@@ -8,6 +8,8 @@ import {
 import { Badge } from "@/components/ui/badge"
 import { Github, Linkedin, Mail } from "lucide-react"
 
+const basePath = process.env.NODE_ENV === "production" ? "/bondhu" : ""
+
 /*
  * ============================================
  * TEAM DATA — CUSTOMIZE YOUR TEAM MEMBERS HERE
@@ -34,7 +36,7 @@ const teamMembers: TeamMember[] = [
     email: "ayesha.rahman@university.edu",
     github: "ayesha-rahman",
     linkedin: "ayesha-rahman",
-    photo: "https://api.dicebear.com/9.x/initials/svg?seed=MS&backgroundColor=0d9488",
+    photo: "/shidujaman.jpg",
   },
   {
     name: "Tanvir Mahmud",
@@ -70,7 +72,7 @@ const teamMembers: TeamMember[] = [
     email: "tasnia.mim@email.com",
     github: "tasnia-mim",
     linkedin: "tasnia-mim",
-    photo: "https://api.dicebear.com/9.x/initials/svg?seed=TM&backgroundColor=0d9488",
+    photo: "https://api.dicebear.com/9.x/initials/svg?seed=AM&backgroundColor=0d9488",
   },
   {
     name: "Arman Uddin",
@@ -110,7 +112,7 @@ export function TeamSection() {
             <Card className="border-primary/30 bg-card">
               <CardHeader className="items-center text-center">
                 <img
-                  src={supervisor.photo}
+                  src={supervisor.photo.startsWith("/") ? `${basePath}${supervisor.photo}` : supervisor.photo}
                   alt={supervisor.name}
                   width={80}
                   height={80}
@@ -162,7 +164,7 @@ export function TeamSection() {
             >
               <CardHeader className="items-center text-center">
                 <img
-                  src={member.photo}
+                  src={member.photo.startsWith("/") ? `${basePath}${member.photo}` : member.photo}
                   alt={member.name}
                   width={64}
                   height={64}
