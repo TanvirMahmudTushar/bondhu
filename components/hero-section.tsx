@@ -57,7 +57,7 @@ export function HeroSection() {
         <div className="flex justify-center">
           <div className="relative overflow-hidden rounded-2xl border border-border">
             <Image
-              src="/images/hero-robot.jpg"
+              src="/bondhu.png"
               alt="Bondhu - AI Translator Robot"
               width={560}
               height={420}
