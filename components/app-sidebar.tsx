@@ -38,7 +38,7 @@ export function AppSidebar() {
 
   return (
     <aside
-      className={`fixed left-0 top-14 z-40 flex h-[calc(100vh-3.5rem)] flex-col border-r border-border bg-background/95 backdrop-blur-md transition-all duration-300 ${
+      className={`fixed left-0 top-14 z-40 hidden h-[calc(100vh-3.5rem)] flex-col border-r border-border bg-background/95 backdrop-blur-md transition-all duration-300 md:flex ${
         minimized ? "w-14" : "w-52"
       }`}
     >

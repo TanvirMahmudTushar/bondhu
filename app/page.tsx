@@ -32,7 +32,7 @@ export default function Page() {
     <>
       <Navbar />
       <AppSidebar />
-      <main>
+      <main className="transition-all duration-300 md:pl-52">
         <HeroSection />
         <AboutSection />
         <FeaturesSection />
