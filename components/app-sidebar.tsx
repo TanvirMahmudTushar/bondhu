@@ -16,6 +16,7 @@ import {
   Mail,
   PanelLeftClose,
   PanelLeft,
+  X,
 } from "lucide-react"
 
 const sidebarLinks = [
@@ -35,24 +36,40 @@ const sidebarLinks = [
 
 export function AppSidebar() {
   const [collapsed, setCollapsed] = useState(false)
+  const [hidden, setHidden] = useState(false)
 
   return (
     <>
       {/* Sidebar */}
       <aside
         className={`fixed left-0 top-0 z-40 flex h-full flex-col border-r border-border bg-background/95 backdrop-blur-md transition-all duration-300 ${
-          collapsed ? "w-16" : "w-56"
+          hidden ? "-translate-x-full" : collapsed ? "w-16" : "w-56"
         }`}
       >
-        {/* Toggle button */}
-        <div className="flex items-center justify-end px-3 py-4">
+        {/* Toggle buttons */}
+        <div className="flex items-center justify-between px-3 py-4">
+          {!collapsed && (
+            <button
+              onClick={() => setHidden(true)}
+              className="rounded-md p-1.5 text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
+              aria-label="Hide sidebar"
+            >
+              <X className="h-4 w-4" />
+            </button>
+          )}
           <button
-            onClick={() => setCollapsed(!collapsed)}
-            className="rounded-md p-1.5 text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
-            aria-label={collapsed ? "Expand sidebar" : "Collapse sidebar"}
+            onClick={() => {
+              if (collapsed) {
+                setHidden(true)
+              } else {
+                setCollapsed(true)
+              }
+            }}
+            className="ml-auto rounded-md p-1.5 text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
+            aria-label={collapsed ? "Hide sidebar" : "Collapse sidebar"}
           >
             {collapsed ? (
-              <PanelLeft className="h-5 w-5" />
+              <PanelLeftClose className="h-5 w-5" />
             ) : (
               <PanelLeftClose className="h-5 w-5" />
             )}
@@ -80,18 +97,19 @@ export function AppSidebar() {
         </nav>
       </aside>
 
-      {/* Mobile sidebar toggle (floating) */}
-      <button
-        onClick={() => setCollapsed(!collapsed)}
-        className="fixed bottom-4 left-4 z-50 rounded-full bg-primary p-3 text-primary-foreground shadow-lg transition-transform hover:scale-105 md:hidden"
-        aria-label="Toggle sidebar"
-      >
-        {collapsed ? (
+      {/* Show sidebar button (visible when hidden) */}
+      {hidden && (
+        <button
+          onClick={() => {
+            setHidden(false)
+            setCollapsed(false)
+          }}
+          className="fixed left-4 top-4 z-50 rounded-md border border-border bg-background/95 p-2 text-muted-foreground shadow-lg backdrop-blur-md transition-colors hover:bg-secondary hover:text-foreground"
+          aria-label="Show sidebar"
+        >
           <PanelLeft className="h-5 w-5" />
-        ) : (
-          <PanelLeftClose className="h-5 w-5" />
-        )}
-      </button>
+        </button>
+      )}
     </>
   )
 }
