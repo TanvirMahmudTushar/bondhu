@@ -46,7 +46,7 @@ export function Navbar() {
         {/* GitHub CTA (desktop) */}
         <Button asChild size="sm" className="hidden md:inline-flex">
           <a
-            href="https://github.com/your-repo/bondhu"
+            href="https://github.com/TanvirMahmudTushar/bondhu"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -82,7 +82,7 @@ export function Navbar() {
             <li className="pt-2">
               <Button asChild size="sm" className="w-full">
                 <a
-                  href="https://github.com/your-repo/bondhu"
+                  href="https://github.com/TanvirMahmudTushar/bondhu"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

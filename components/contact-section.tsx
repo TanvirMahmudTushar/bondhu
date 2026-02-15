@@ -12,7 +12,7 @@ const socialLinks = [
   {
     icon: Github,
     label: "GitHub",
-    href: "https://github.com/your-repo/bondhu",
+    href: "https://github.com/TanvirMahmudTushar/bondhu",
     description: "View our source code and contribute",
   },
   {
@@ -79,7 +79,7 @@ export function ContactSection() {
         <div className="mt-16 text-center">
           <Button asChild size="lg">
             <a
-              href="https://github.com/your-repo/bondhu"
+              href="https://github.com/TanvirMahmudTushar/bondhu"
               target="_blank"
               rel="noopener noreferrer"
             >

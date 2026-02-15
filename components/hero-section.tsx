@@ -36,7 +36,7 @@ export function HeroSection() {
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Button asChild size="lg">
               <a
-                href="https://github.com/your-repo/bondhu"
+                href="https://github.com/TanvirMahmudTushar/bondhu"
                 target="_blank"
                 rel="noopener noreferrer"
               >
