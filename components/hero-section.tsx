@@ -63,6 +63,7 @@ export function HeroSection() {
               height={420}
               className="object-cover"
               priority
+              unoptimized
             />
             <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-foreground/5" />
           </div>
