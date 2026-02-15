@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight, Github } from "lucide-react"
-import Image from "next/image"
+
+const basePath = "/bondhu"
 
 export function HeroSection() {
   return (
@@ -56,14 +57,13 @@ export function HeroSection() {
         {/* Hero image */}
         <div className="flex justify-center">
           <div className="relative overflow-hidden rounded-2xl border border-border">
-            <Image
-              src="/bondhu.png"
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={`${basePath}/bondhu.png`}
               alt="Bondhu - AI Translator Robot"
               width={560}
               height={420}
               className="object-cover"
-              priority
-              unoptimized
             />
             <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-foreground/5" />
           </div>
