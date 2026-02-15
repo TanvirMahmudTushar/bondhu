@@ -25,7 +25,7 @@ export function HeroSection() {
             Bondhu
           </h1>
           <p className="mt-3 text-lg font-medium text-primary sm:text-xl">
-            A Talking AI Translator Robot
+            A Bengali Dialect Based Talking AI Translator Robot
           </p>
           <p className="mt-6 max-w-lg text-pretty leading-relaxed text-muted-foreground">
             Bondhu is an intelligent robot that listens, understands, and speaks
