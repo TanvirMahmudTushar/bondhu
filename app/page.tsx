@@ -32,7 +32,7 @@ export default function Page() {
     <>
       <Navbar />
       <AppSidebar />
-      <main className="pl-16">
+      <main>
         <HeroSection />
         <AboutSection />
         <FeaturesSection />

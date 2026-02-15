@@ -35,61 +35,41 @@ const sidebarLinks = [
 ]
 
 export function AppSidebar() {
-  const [collapsed, setCollapsed] = useState(false)
-  const [hidden, setHidden] = useState(false)
+  const [hidden, setHidden] = useState(true)
 
   return (
     <>
       {/* Sidebar */}
       <aside
-        className={`fixed left-0 top-0 z-40 flex h-full flex-col border-r border-border bg-background/95 backdrop-blur-md transition-all duration-300 ${
-          hidden ? "-translate-x-full" : collapsed ? "w-16" : "w-56"
+        className={`fixed left-0 top-0 z-40 flex h-full w-56 flex-col border-r border-border bg-background/95 backdrop-blur-md transition-transform duration-300 ${
+          hidden ? "-translate-x-full" : "translate-x-0"
         }`}
       >
-        {/* Toggle buttons */}
-        <div className="flex items-center justify-between px-3 py-4">
-          {!collapsed && (
-            <button
-              onClick={() => setHidden(true)}
-              className="rounded-md p-1.5 text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
-              aria-label="Hide sidebar"
-            >
-              <X className="h-4 w-4" />
-            </button>
-          )}
+        {/* Header with hide button */}
+        <div className="flex items-center justify-between border-b border-border px-4 py-4">
+          <span className="text-sm font-semibold text-foreground">Navigation</span>
           <button
-            onClick={() => {
-              if (collapsed) {
-                setHidden(true)
-              } else {
-                setCollapsed(true)
-              }
-            }}
-            className="ml-auto rounded-md p-1.5 text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
-            aria-label={collapsed ? "Hide sidebar" : "Collapse sidebar"}
+            onClick={() => setHidden(true)}
+            className="rounded-md p-1.5 text-muted-foreground transition-colors hover:bg-destructive/10 hover:text-destructive"
+            aria-label="Hide sidebar"
           >
-            {collapsed ? (
-              <PanelLeftClose className="h-5 w-5" />
-            ) : (
-              <PanelLeftClose className="h-5 w-5" />
-            )}
+            <X className="h-5 w-5" />
           </button>
         </div>
 
         {/* Navigation links */}
-        <nav className="flex-1 overflow-y-auto px-2 pb-4">
+        <nav className="flex-1 overflow-y-auto px-2 py-4">
           <ul className="flex flex-col gap-1">
             {sidebarLinks.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className={`flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground ${
-                    collapsed ? "justify-center" : ""
-                  }`}
-                  title={collapsed ? link.label : undefined}
+                  onClick={() => setHidden(true)}
+                  className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
+                  title={link.label}
                 >
                   <link.icon className="h-4 w-4 shrink-0" />
-                  {!collapsed && <span>{link.label}</span>}
+                  <span>{link.label}</span>
                 </a>
               </li>
             ))}
@@ -97,14 +77,19 @@ export function AppSidebar() {
         </nav>
       </aside>
 
-      {/* Show sidebar button (visible when hidden) */}
+      {/* Overlay when sidebar is open (mobile) */}
+      {!hidden && (
+        <div
+          className="fixed inset-0 z-30 bg-black/40 md:hidden"
+          onClick={() => setHidden(true)}
+        />
+      )}
+
+      {/* Show sidebar button — always visible when sidebar is hidden */}
       {hidden && (
         <button
-          onClick={() => {
-            setHidden(false)
-            setCollapsed(false)
-          }}
-          className="fixed left-4 top-4 z-50 rounded-md border border-border bg-background/95 p-2 text-muted-foreground shadow-lg backdrop-blur-md transition-colors hover:bg-secondary hover:text-foreground"
+          onClick={() => setHidden(false)}
+          className="fixed left-4 top-4 z-50 rounded-lg border border-border bg-background p-2.5 text-muted-foreground shadow-lg transition-colors hover:bg-secondary hover:text-foreground"
           aria-label="Show sidebar"
         >
           <PanelLeft className="h-5 w-5" />
