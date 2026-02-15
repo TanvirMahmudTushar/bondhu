@@ -45,7 +45,7 @@ const teamMembers: TeamMember[] = [
     email: "6209tanvir@email.com",
     github: "farhan-ahmed",
     linkedin: "farhan-ahmed",
-    photo: "https://api.dicebear.com/9.x/initials/svg?seed=TM&backgroundColor=0d9488",
+    photo: "/tanvir.jpg",
   },
   {
     name: "Atia Ibnat Mouni",
@@ -54,7 +54,7 @@ const teamMembers: TeamMember[] = [
     email: "nusrat.jahan@email.com",
     github: "nusrat-jahan",
     linkedin: "nusrat-jahan",
-    photo: "https://api.dicebear.com/9.x/initials/svg?seed=NJ&backgroundColor=0d9488",
+    photo: "https://api.dicebear.com/9.x/initials/svg?seed=AIM&backgroundColor=0d9488",
   },
   {
     name: "Tawhid Bin Moslim",
