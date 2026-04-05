@@ -14,18 +14,20 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Bondhu - A Talking AI Translator Robot",
+  title: "Bondhu - A Bengali Dialect Based Humanoid Robot",
   description:
-    "Bondhu is an AI-powered translator robot that uses Speech-to-Text, NLP, LLM, and Text-to-Speech to enable real-time multilingual voice translation and human interaction.",
+    "Bondhu is an AI-powered humanoid robot designed to detect dangers and provide safety recommendations. Built with Bengali dialect support, Speech-to-Text, NLP, Large Language Models, and Text-to-Speech for natural interaction.",
   keywords: [
     "AI robot",
-    "translator robot",
+    "humanoid robot",
+    "danger detection",
+    "safety recommendations",
+    "Bengali dialect",
     "speech to text",
     "NLP",
     "LLM",
     "Raspberry Pi",
     "robotics",
-    "multilingual",
   ],
   authors: [{ name: "Team Bondhu" }],
 }
