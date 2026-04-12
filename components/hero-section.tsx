@@ -69,7 +69,7 @@ export function HeroSection() {
             <div className="relative overflow-hidden rounded-2xl border border-border">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={`${basePath}/bondhu.png`}
+                src={`${basePath}/bondhu.webp`}
                 alt="Bondhu - Bengali Dialect Based Humanoid Robot"
                 width={560}
                 height={420}

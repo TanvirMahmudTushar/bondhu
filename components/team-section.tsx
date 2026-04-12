@@ -38,7 +38,7 @@ const teamMembers: TeamMember[] = [
     email: "shidujaman@iub.edu.bd",
     github: "",
     linkedin: "mohammad-shidujaman-phd-104a2848",
-    photo: "/shidujaman.jpg",
+    photo: "/shidujaman.webp",
   },
   {
     name: "Tanvir Mahmud",
@@ -47,7 +47,7 @@ const teamMembers: TeamMember[] = [
     email: "6209tanvir@email.com",
     github: "tanvirmahmudtushar",
     linkedin: "tanvir-mahmud007",
-    photo: "/tanvir.jpg",
+    photo: "/tanvir.webp",
     isTeamLeader: true,
   },
   {
@@ -57,7 +57,7 @@ const teamMembers: TeamMember[] = [
     email: "ibnat567atia@gmail.com",
     github: "Atia002",
     linkedin: "atia-ibnat-07a982279",
-    photo: "/atia.jpg",
+    photo: "/atia.webp",
     isCoLeader: true,
   },
   {
@@ -67,7 +67,7 @@ const teamMembers: TeamMember[] = [
     email: "rafiul.islam@email.com",
     github: "TAWHID1514",
     linkedin: "tawhid-bin-moslim-tawhid-098ab9354",
-    photo: "/tawhid.jpg",
+    photo: "/tawhid.webp",
   },
   {
     name: "Abir Mahmud",
@@ -85,7 +85,7 @@ const teamMembers: TeamMember[] = [
     email: "armanuddin1010@gmail.com",
     github: "Arman-zz",
     linkedin: "",
-    photo: "/arman.jpg",
+    photo: "/arman.webp",
   },
 ]
 
