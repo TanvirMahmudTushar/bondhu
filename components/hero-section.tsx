@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { ArrowRight, Github } from "lucide-react"
+import { Github, Play } from "lucide-react"
 
-const basePath = "/bondhu"
+const basePath = process.env.NODE_ENV === "production" ? "/bondhu" : ""
 
 export function HeroSection() {
   return (
@@ -47,9 +47,9 @@ export function HeroSection() {
               </a>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <a href="#about">
-                Learn More
-                <ArrowRight className="ml-2 h-4 w-4" />
+              <a href={`${basePath}/bondhu_demo.mp4`} target="_blank">
+                <Play className="mr-2 h-4 w-4" />
+                Watch Demo
               </a>
             </Button>
           </div>
