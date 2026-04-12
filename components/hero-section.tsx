@@ -19,7 +19,7 @@ export function HeroSection() {
         {/* Text content */}
         <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
           <Badge variant="outline" className="mb-6 border-primary/30 text-primary">
-            AI-Powered Robotics
+            Bondhu You Never Had
           </Badge>
           <h1 className="text-balance text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
             Bondhu
