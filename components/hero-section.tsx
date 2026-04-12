@@ -32,15 +32,10 @@ export function HeroSection() {
               Bondhu
             </h1>
             <p className="mt-3 text-lg font-medium text-primary sm:text-xl">
-              A Bengali Dialect Based Humanoid Robot to Detect Dangers and Provide Recommendations
+              The AI-Powered Talking Robot That Breaks Language Barriers
             </p>
             <p className="mt-6 max-w-lg text-pretty leading-relaxed text-muted-foreground">
-              Bondhu is an intelligent humanoid robot that listens, understands,
-              and responds in Bengali dialect and multiple languages. Built with
-              cutting-edge AI technologies including Speech-to-Text, NLP, Large
-              Language Models, and Text-to-Speech, it detects potential dangers
-              and provides reliable safety recommendations through natural
-              conversation.
+              Bondhu (meaning "friend" in Bengali) is an AI-powered talking robot designed to break language barriers. It combines robotics with artificial intelligence to create a companion that can listen, understand, translate, and respond in real time — making communication accessible for everyone.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <Button asChild size="lg">
