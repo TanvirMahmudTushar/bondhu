@@ -1,5 +1,5 @@
 /**
- * Bondhu — An AI-Powered Talking Robot That Breaks Language Barriers
+ * Bondhu — A Bengali Dialect Based Humanoid Robot to Detect Dangers and Provide Recommendations
  *
  * This is a fully static website built with:
  * - Next.js (App Router) with `output: "export"` for GitHub Pages
