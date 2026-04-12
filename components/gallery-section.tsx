@@ -7,33 +7,35 @@ import {
 } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
+const basePath = process.env.NODE_ENV === "production" ? "/bondhu" : ""
+
 const galleryItems = [
   {
-    src: "/img1.webp",
+    src: `${basePath}/img1.webp`,
     alt: "Bondhu robot close-up view",
     caption: "Bondhu Robot Structure",
     category: "robot",
   },
   {
-    src: "/img2.webp",
+    src: `${basePath}/img2.webp`,
     alt: "Bondhu robot with sensors",
     caption: "Sensor Configuration",
     category: "robot",
   },
   {
-    src: "/img3.webp",
+    src: `${basePath}/img3.webp`,
     alt: "Bondhu detecting danger demo",
     caption: "Danger Detection Demo",
     category: "demo",
   },
   {
-    src: "/img4.webp",
+    src: `${basePath}/img4.webp`,
     alt: "Bondhu build and assembly process",
     caption: "Construction Phase",
     category: "build",
   },
   {
-    src: "/img5.webp",
+    src: `${basePath}/img5.webp`,
     alt: "Bondhu final assembly and testing",
     caption: "Final Assembly & Testing",
     category: "build",
