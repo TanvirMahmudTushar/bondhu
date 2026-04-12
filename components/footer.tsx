@@ -12,7 +12,7 @@ export function Footer() {
           >
             Tanvir Mahmud Tushar
           </a>
-          {" "}and the team
+          {" "}and the team. 
         </p>
       </div>
     </footer>

@@ -13,13 +13,13 @@ const socialLinks = [
     icon: Github,
     label: "GitHub",
     href: "https://github.com/TanvirMahmudTushar",
-    description: "View Tanvir's GitHub profile",
+    description: " ",
   },
   {
     icon: Linkedin,
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/tanvir-mahmud007/",
-    description: "Connect with Tanvir on LinkedIn",
+    description: " ",
   },
   {
     icon: Mail,
