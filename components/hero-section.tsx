@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Dialog, DialogContent } from "@/components/ui/dialog"
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog"
 import { Github, Play, X } from "lucide-react"
 
 const basePath = process.env.NODE_ENV === "production" ? "/bondhu" : ""
@@ -84,6 +84,7 @@ export function HeroSection() {
       {/* Video Modal */}
       <Dialog open={isVideoOpen} onOpenChange={setIsVideoOpen}>
         <DialogContent className="max-w-4xl w-full aspect-video p-0 border-0">
+          <DialogTitle className="sr-only">Bondhu Demo Video</DialogTitle>
           <button
             onClick={() => setIsVideoOpen(false)}
             className="absolute right-4 top-4 z-50 rounded-full bg-black/50 p-2 hover:bg-black/70 transition-colors"
