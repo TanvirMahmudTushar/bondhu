@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  /* Bondhu Dark Theme — Teal/Cyan accent on near-black */
+  :root {
+    --background: 220 20% 4%;
+    --foreground: 210 20% 95%;
+    --card: 220 18% 7%;
+    --card-foreground: 210 20% 95%;
+    --popover: 220 18% 7%;
+    --popover-foreground: 210 20% 95%;
+    --primary: 175 70% 50%;
+    --primary-foreground: 220 20% 4%;
+    --secondary: 220 16% 12%;
+    --secondary-foreground: 210 20% 90%;
+    --muted: 220 14% 14%;
+    --muted-foreground: 215 12% 55%;
+    --accent: 175 70% 50%;
+    --accent-foreground: 220 20% 4%;
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 12% 16%;
+    --input: 220 12% 16%;
+    --ring: 175 70% 50%;
+    --radius: 0.625rem;
+    --chart-1: 175 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 220 18% 6%;
+    --sidebar-foreground: 210 20% 90%;
+    --sidebar-primary: 175 70% 50%;
+    --sidebar-primary-foreground: 220 20% 4%;
+    --sidebar-accent: 220 14% 14%;
+    --sidebar-accent-foreground: 210 20% 90%;
+    --sidebar-border: 220 12% 16%;
+    --sidebar-ring: 175 70% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(220 18% 7%);
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(220 12% 20%);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(175 70% 50% / 0.5);
+}
