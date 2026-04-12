@@ -12,20 +12,20 @@ const socialLinks = [
   {
     icon: Github,
     label: "GitHub",
-    href: "https://github.com/TanvirMahmudTushar/bondhu",
-    description: "View our source code and contribute",
+    href: "https://github.com/TanvirMahmudTushar",
+    description: "View Tanvir's GitHub profile",
   },
   {
     icon: Linkedin,
     label: "LinkedIn",
-    href: "https://linkedin.com/in/your-profile",
-    description: "Connect with us professionally",
+    href: "https://www.linkedin.com/in/tanvir-mahmud007/",
+    description: "Connect with Tanvir on LinkedIn",
   },
   {
     icon: Mail,
     label: "Email",
-    href: "mailto:team.bondhu@email.com",
-    description: "team.bondhu@email.com",
+    href: "mailto:6209tanvir@gmail.com",
+    description: "6209tanvir@gmail.com",
   },
 ]
 
