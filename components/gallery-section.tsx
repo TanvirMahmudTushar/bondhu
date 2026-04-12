@@ -9,33 +9,33 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 const galleryItems = [
   {
-    src: "/images/hero-robot.jpg",
-    alt: "Bondhu robot front view",
-    caption: "Bondhu — Front View",
+    src: "/img%20(1).jpg",
+    alt: "Bondhu robot close-up view",
+    caption: "Bondhu Robot Structure",
     category: "robot",
   },
   {
-    src: "/images/gallery-1.jpg",
-    alt: "Bondhu robot face close-up",
-    caption: "Face & Sensor Array",
+    src: "/img%20(2).jpg",
+    alt: "Bondhu robot with sensors",
+    caption: "Sensor Configuration",
     category: "robot",
   },
   {
-    src: "/images/gallery-2.jpg",
-    alt: "Bondhu robot translating for a person",
-    caption: "Real-Time Translation Demo",
+    src: "/img%20(3).jpg",
+    alt: "Bondhu detecting danger demo",
+    caption: "Danger Detection Demo",
     category: "demo",
   },
   {
-    src: "/images/gallery-3.jpg",
-    alt: "Raspberry Pi and electronics assembly",
-    caption: "Hardware Assembly",
+    src: "/img%20(4).jpg",
+    alt: "Bondhu build and assembly process",
+    caption: "Construction Phase",
     category: "build",
   },
   {
-    src: "/images/gallery-4.jpg",
-    alt: "Team working on the robot project",
-    caption: "Team at Work",
+    src: "/img%20(5).jpg",
+    alt: "Bondhu final assembly and testing",
+    caption: "Final Assembly & Testing",
     category: "build",
   },
 ]
