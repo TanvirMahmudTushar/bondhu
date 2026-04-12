@@ -14,6 +14,7 @@
 import { Navbar } from "@/components/navbar"
 import { AppSidebar } from "@/components/app-sidebar"
 import { HeroSection } from "@/components/hero-section"
+import { HowItWorksSection } from "@/components/how-it-works-section"
 import { AboutSection } from "@/components/about-section"
 import { FeaturesSection } from "@/components/features-section"
 import { TechSection } from "@/components/tech-section"
@@ -34,6 +35,7 @@ export default function Page() {
       <AppSidebar />
       <main className="transition-all duration-300 md:pl-52">
         <HeroSection />
+        <HowItWorksSection />
         <AboutSection />
         <FeaturesSection />
         <TechSection />
