@@ -54,7 +54,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 
 const nextConfig = {
   output: "export",
-  basePath: "/bondhu",
+  basePath: process.env.NODE_ENV === "production" ? "/bondhu" : "",
   trailingSlash: true,
   images: {
     unoptimized: true,
