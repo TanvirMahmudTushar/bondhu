@@ -36,25 +36,25 @@ const weeks = [
   {
     week: "Week 5–6",
     date: "Jan 29 – Feb 11",
-    title: "Computer Vision & AI Models",
+    title: "AI Pipeline Development",
     status: "completed" as const,
     tasks: [
-      "Trained YOLO v8 object detection model",
-      "Integrated thermal imaging libraries",
-      "Developed hazard classification AI",
-      "Set up real-time video processing",
+      "Implemented Speech-to-Text module",
+      "Integrated NLP processing pipeline",
+      "Connected LLM API for conversation",
+      "Added Text-to-Speech output",
     ],
   },
   {
     week: "Week 7–8",
     date: "Feb 12 – Feb 25",
-    title: "Alert System & Hindi Bengali Integration",
+    title: "Integration & Testing",
     status: "in-progress" as const,
     tasks: [
-      "Implemented Bengali alert generation",
-      "Created emergency notification system",
-      "Hazard detection accuracy testing",
-      "Multi-sensor fusion optimization",
+      "End-to-end pipeline integration",
+      "Bengali dialect testing and tuning",
+      "Latency optimization",
+      "User interaction testing",
     ],
   },
   {
@@ -84,7 +84,8 @@ export function WeeklyUpdatesSection() {
             Weekly Updates
           </h2>
           <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-            Follow our development journey as we build Bondhu from concept through field testing and deployment.
+            Track our development progress week by week as we build Bondhu from
+            concept to reality.
           </p>
         </div>
 

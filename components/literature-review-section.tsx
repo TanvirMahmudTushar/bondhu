@@ -8,38 +8,38 @@ import { BookOpen, FileText, ExternalLink } from "lucide-react"
 
 const papers = [
   {
-    title: "YOLO: Real-Time Object Detection",
-    authors: "Redmon et al., 2016 - Updated 2023",
+    title: "Speech Recognition for Low-Resource Languages",
+    authors: "Zhang et al., 2024",
     summary:
-      "Foundational real-time object detection framework enabling Bondhu to identify hazards, fires, and structural damage with high accuracy and minimal latency.",
+      "A comprehensive survey on ASR techniques for low-resource languages, covering transfer learning and data augmentation methods applicable to Bengali dialect recognition.",
     link: "#",
   },
   {
-    title: "Thermal Imaging for Fire Detection",
-    authors: "Santos et al., 2022",
+    title: "Transformer-Based Machine Translation",
+    authors: "Vaswani et al., 2017",
     summary:
-      "Advanced techniques for using thermal imaging to detect fires and heat anomalies in various environmental conditions, critical for Bondhu's early warning system.",
+      "The foundational paper on the Transformer architecture that powers modern NLP and machine translation systems used in Bondhu.",
     link: "#",
   },
   {
-    title: "Deep Learning for Chemical Hazard Recognition",
-    authors: "Kumar et al., 2023",
-    summary:
-      "Neural networks trained for identifying chemical spills, toxic substances, and environmental pollutants from visual data on edge devices.",
-    link: "#",
-  },
-  {
-    title: "Multi-Sensor Fusion for Robotics",
+    title: "Edge AI for Robotics Applications",
     authors: "Chen et al., 2023",
     summary:
-      "Techniques for combining data from multiple sensors (vision, thermal, proximity) to reduce false positives and improve hazard detection accuracy.",
+      "Explores deploying AI models on edge devices like Raspberry Pi, covering optimization techniques for real-time inference in robotics.",
     link: "#",
   },
   {
-    title: "Bengali Language for Emergency Response Systems",
-    authors: "Majumder et al., 2023",
+    title: "Multilingual Text-to-Speech Systems",
+    authors: "Ren et al., 2022",
     summary:
-      "Research on effective communication of critical safety information in Bengali, ensuring all community members understand hazard warnings and recommendations.",
+      "Advances in neural TTS supporting multiple languages, with focus on naturalness and speaker adaptation for conversational AI.",
+    link: "#",
+  },
+  {
+    title: "Human-Robot Interaction Through Natural Language",
+    authors: "Mavridis, 2015",
+    summary:
+      "A review of NLP-driven human-robot interaction paradigms, informing Bondhu's conversational design and user experience.",
     link: "#",
   },
 ]
@@ -57,7 +57,8 @@ export function LiteratureReviewSection() {
             Literature Review
           </h2>
           <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-            Academic research and cutting-edge papers that informed the development of Bondhu's hazard detection and safety alert systems.
+            Key academic papers and research that informed the design and
+            development of Bondhu&apos;s AI translation pipeline.
           </p>
         </div>
 

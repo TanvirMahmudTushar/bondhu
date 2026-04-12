@@ -21,7 +21,7 @@ const components = [
     category: "Input",
     icon: Mic,
     description:
-      "High-sensitivity microphone for Bengali voice alerts and communicating hazard information to nearby individuals.",
+      "High-sensitivity USB microphone for capturing user speech with noise cancellation support.",
     specs: ["Omnidirectional", "16-bit/48kHz", "USB 2.0"],
   },
   {
@@ -29,8 +29,8 @@ const components = [
     category: "Output",
     icon: Speaker,
     description:
-      "5W+ speaker module for emergency alerts and Bengali safety announcements that can be heard across environments.",
-    specs: ["5W+ output", "3.5mm jack", "8Ω impedance"],
+      "3W speaker module connected via 3.5mm audio jack for clear text-to-speech output.",
+    specs: ["3W output", "3.5mm jack", "8Ω impedance"],
   },
   {
     name: "Wi-Fi Module",
@@ -53,8 +53,8 @@ const components = [
     category: "Input",
     icon: Camera,
     description:
-      "High-resolution camera for real-time hazard detection, fire spotting, and environmental threat identification.",
-    specs: ["8MP+", "1080p+ video", "CSI interface"],
+      "Optional camera module for future visual recognition and gesture-based interaction features.",
+    specs: ["5MP", "1080p video", "CSI interface"],
   },
 ]
 
@@ -71,7 +71,8 @@ export function ComponentsSection() {
             Components
           </h2>
           <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-            The integrated sensors, processors, and electronics that work together to detect hazards and protect communities.
+            The key hardware and electronic components that make up Bondhu&apos;s
+            physical form and capabilities.
           </p>
         </div>
 

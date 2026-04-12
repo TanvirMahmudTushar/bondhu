@@ -1,14 +1,10 @@
-"use client"
-
-import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog"
-import { ArrowRight, Github, Play } from "lucide-react"
+import { ArrowRight, Github } from "lucide-react"
+
+const basePath = "/bondhu"
 
 export function HeroSection() {
-  const [isVideoOpen, setIsVideoOpen] = useState(false)
-
   return (
     <section
       id="home"
@@ -23,7 +19,7 @@ export function HeroSection() {
         {/* Text content */}
         <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
           <Badge variant="outline" className="mb-6 border-primary/30 text-primary">
-            Intelligent Safety Systems
+            AI-Powered Robotics
           </Badge>
           <h1 className="text-balance text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
             Bondhu
@@ -32,7 +28,12 @@ export function HeroSection() {
             A Bengali Dialect Based Humanoid Robot to Detect Dangers and Provide Recommendations
           </p>
           <p className="mt-6 max-w-lg text-pretty leading-relaxed text-muted-foreground">
-            Bondhu is an intelligent humanoid robot designed to detect environmental hazards and threats in Bengali-speaking regions. Equipped with advanced computer vision, sensor fusion, and AI analytics, it identifies dangers in real-time and provides actionable recommendations to prevent accidents and save lives.
+            Bondhu is an intelligent humanoid robot that listens, understands,
+            and responds in Bengali dialect and multiple languages. Built with
+            cutting-edge AI technologies including Speech-to-Text, NLP, Large
+            Language Models, and Text-to-Speech, it detects potential dangers
+            and provides reliable safety recommendations through natural
+            conversation.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Button asChild size="lg">
@@ -45,10 +46,11 @@ export function HeroSection() {
                 View on GitHub
               </a>
             </Button>
-            
-            <Button variant="outline" size="lg" onClick={() => setIsVideoOpen(true)}>
-              <Play className="mr-2 h-4 w-4" />
-              Watch Demo
+            <Button asChild variant="outline" size="lg">
+              <a href="#about">
+                Learn More
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </a>
             </Button>
           </div>
         </div>
@@ -58,8 +60,8 @@ export function HeroSection() {
           <div className="relative overflow-hidden rounded-2xl border border-border">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/bondhu.png"
-              alt="Bondhu - AI Safety & Hazard Detection Robot"
+              src={`${basePath}/bondhu.png`}
+              alt="Bondhu - Bengali Dialect Based Humanoid Robot"
               width={560}
               height={420}
               className="object-cover"
@@ -68,20 +70,6 @@ export function HeroSection() {
           </div>
         </div>
       </div>
-
-      <Dialog open={isVideoOpen} onOpenChange={setIsVideoOpen}>
-        <DialogContent className="max-w-4xl">
-          <DialogTitle className="sr-only">Bondhu Demo Video</DialogTitle>
-          <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-            <video
-              src="/bondhu_demo.mp4"
-              controls
-              autoPlay
-              className="absolute inset-0 h-full w-full rounded-lg"
-            />
-          </div>
-        </DialogContent>
-      </Dialog>
     </section>
   )
 }

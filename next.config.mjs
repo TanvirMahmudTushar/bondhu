@@ -54,7 +54,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 
 const nextConfig = {
   output: "export",
-  // basePath: "/bondhu", // Uncomment for GitHub Pages deployment
+  basePath: "/bondhu",
   trailingSlash: true,
   images: {
     unoptimized: true,

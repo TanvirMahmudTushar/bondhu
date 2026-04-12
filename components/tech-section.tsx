@@ -8,9 +8,9 @@ import {
   Cpu,
   Code,
   Brain,
-  Eye,
-  Thermometer,
-  AlertCircle,
+  MessageSquare,
+  Mic,
+  Volume2,
   Cog,
 } from "lucide-react"
 
@@ -18,37 +18,37 @@ const technologies = [
   {
     icon: Cpu,
     name: "Raspberry Pi 5",
-    description: "High-performance edge computing platform running the entire hazard detection AI pipeline in real-time.",
+    description: "The brain of Bondhu — a powerful single-board computer running the entire AI pipeline on the edge.",
   },
   {
     icon: Code,
     name: "Python",
-    description: "Core programming language for computer vision models, sensor processing, and autonomous decision-making logic.",
-  },
-  {
-    icon: Eye,
-    name: "Computer Vision",
-    description: "Advanced image processing and object detection to identify hazards, fires, spills, and structural damage.",
-  },
-  {
-    icon: Thermometer,
-    name: "Thermal Imaging",
-    description: "Infrared sensor integration for detecting heat anomalies and fire sources in any lighting condition.",
+    description: "Core programming language used for AI models, speech processing, and robot control logic.",
   },
   {
     icon: Brain,
-    name: "Deep Learning Models",
-    description: "Neural networks trained on hazard recognition to instantly identify and classify safety threats.",
+    name: "NLP",
+    description: "Natural Language Processing for understanding human language, intent recognition, and context analysis.",
   },
   {
-    icon: AlertCircle,
-    name: "Real-Time Alerts",
-    description: "Instant notification system that triggers immediate warnings in Bengali for emergency response.",
+    icon: MessageSquare,
+    name: "LLM",
+    description: "Large Language Models powering intelligent conversation, translation, and knowledge retrieval.",
+  },
+  {
+    icon: Mic,
+    name: "Speech to Text",
+    description: "Converts spoken words into text using speech recognition models for real-time language input.",
+  },
+  {
+    icon: Volume2,
+    name: "Text to Speech",
+    description: "Transforms generated text responses into natural-sounding voice output in multiple languages.",
   },
   {
     icon: Cog,
     name: "Robotics",
-    description: "Humanoid frame with motors, sensors, cameras, and microphones for continuous environmental monitoring.",
+    description: "Hardware integration with servo motors, sensors, microphones, and speakers for physical interaction.",
   },
 ]
 
@@ -65,7 +65,8 @@ export function TechSection() {
             Technology Stack
           </h2>
           <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-            A cutting-edge combination of sensors, AI, and robotics enables Bondhu to continuously monitor environments and protect lives.
+            A carefully chosen set of technologies powers Bondhu from hardware
+            to AI.
           </p>
         </div>
 

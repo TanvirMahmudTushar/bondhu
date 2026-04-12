@@ -14,18 +14,20 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Bondhu - AI-Powered Safety & Hazard Detection Robot",
+  title: "Bondhu - A Bengali Dialect Based Humanoid Robot",
   description:
-    "Bondhu is a Bengali-language humanoid robot that detects environmental hazards in real-time using computer vision and AI. It provides instant alerts and safety recommendations to protect communities from fires, chemical spills, and other critical dangers.",
+    "Bondhu is an AI-powered humanoid robot designed to detect dangers and provide safety recommendations. Built with Bengali dialect support, Speech-to-Text, NLP, Large Language Models, and Text-to-Speech for natural interaction.",
   keywords: [
     "AI robot",
-    "hazard detection",
-    "safety robot",
-    "fire detection",
-    "computer vision",
-    "Bengali language",
+    "humanoid robot",
+    "danger detection",
+    "safety recommendations",
+    "Bengali dialect",
+    "speech to text",
+    "NLP",
+    "LLM",
+    "Raspberry Pi",
     "robotics",
-    "threat detection",
   ],
   authors: [{ name: "Team Bondhu" }],
 }

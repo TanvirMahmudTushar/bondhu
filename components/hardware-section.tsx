@@ -44,10 +44,10 @@ const hardwareItems = [
     icon: Cog,
     status: "In Progress",
     description:
-      "Pan-tilt servo motors for camera and sensor positioning, enabling 360-degree environmental scanning and precise hazard tracking.",
+      "Servo motors for head movement and gesture-based interaction, allowing Bondhu to physically respond during conversations.",
     details: [
       "2x SG90 micro servos",
-      "Pan-tilt mechanism",
+      "Pan-tilt head mechanism",
       "PWM control via GPIO",
     ],
   },
@@ -80,11 +80,11 @@ const hardwareItems = [
     icon: HardDrive,
     status: "Planned",
     description:
-      "Advanced sensor suite for multi-modal hazard detection including thermal imaging, gas sensors, and motion detection for comprehensive environmental monitoring.",
+      "Future expansion with proximity sensors and LED indicators for enhanced interaction feedback and environmental awareness.",
     details: [
-      "Thermal IR camera module",
-      "Gas sensor array",
-      "Motion & proximity sensors",
+      "Ultrasonic distance sensor",
+      "RGB LED ring for status",
+      "Touch-sensitive button",
     ],
   },
 ]
@@ -102,7 +102,9 @@ export function HardwareSection() {
             Hardware
           </h2>
           <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-            The integrated sensors, processors, and mechanical systems that enable Bondhu to continuously monitor and respond to environmental hazards.\n          </p>
+            The physical components, assembly, and engineering behind
+            Bondhu&apos;s robotic body.
+          </p>
         </div>
 
         {/* Hardware grid */}

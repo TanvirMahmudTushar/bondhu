@@ -23,7 +23,7 @@ const galleryItems = [
   {
     src: "/images/gallery-2.jpg",
     alt: "Bondhu robot translating for a person",
-    caption: "Hazard Detection in Action",
+    caption: "Real-Time Translation Demo",
     category: "demo",
   },
   {

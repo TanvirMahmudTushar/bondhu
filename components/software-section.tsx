@@ -7,61 +7,61 @@ import {
 import { Badge } from "@/components/ui/badge"
 import {
   Code2,
-  Camera,
-  AlertTriangle,
-  Zap,
+  Mic,
+  Brain,
+  MessageSquare,
   Volume2,
   Database,
 } from "lucide-react"
 
 const softwareModules = [
   {
-    name: "Computer Vision Engine",
-    icon: Camera,
+    name: "Speech-to-Text Engine",
+    icon: Mic,
     language: "Python",
     description:
-      "Real-time image processing and object detection using deep learning models to identify fires, structural damage, spills, and hazards.",
-    technologies: ["YOLOv8", "OpenCV", "TensorFlow"],
+      "Converts spoken audio input into text using Whisper-based ASR models, optimized for Bengali dialects and multilingual input.",
+    technologies: ["OpenAI Whisper", "PyAudio", "NumPy"],
   },
   {
-    name: "Thermal Analysis Module",
-    icon: AlertTriangle,
+    name: "NLP Processing Pipeline",
+    icon: Brain,
     language: "Python",
     description:
-      "Processes thermal imaging data to detect heat anomalies, fires, and temperature-based hazards in any lighting condition.",
-    technologies: ["NumPy", "SciPy", "Thermal Libraries"],
+      "Analyzes transcribed text for intent recognition, language detection, and context understanding before passing to the LLM.",
+    technologies: ["spaCy", "NLTK", "LangDetect"],
   },
   {
-    name: "Hazard Detection AI",
-    icon: Zap,
+    name: "LLM Integration",
+    icon: MessageSquare,
     language: "Python",
     description:
-      "Deep learning classifier trained to instantly recognize and categorize multiple types of environmental hazards and safety threats.",
-    technologies: ["PyTorch", "Custom Models", "ONNX Runtime"],
+      "Connects to Large Language Models for intelligent response generation, translation, and contextual conversation management.",
+    technologies: ["LangChain", "OpenAI API", "Prompt Engineering"],
   },
   {
-    name: "Alert & Notification System",
+    name: "Text-to-Speech Output",
     icon: Volume2,
     language: "Python",
     description:
-      "Generates immediate alerts in Bengali with clear danger warnings, evacuation recommendations, and emergency contact information.",
-    technologies: ["Text-to-Speech", "Audio Output", "AsyncIO"],
+      "Converts generated text responses into natural-sounding speech output in the target language using neural TTS models.",
+    technologies: ["gTTS", "Pyttsx3", "SoundDevice"],
   },
   {
-    name: "Sensor Fusion & Processing",
+    name: "Robot Control System",
     icon: Code2,
     language: "Python",
     description:
-      "Integrates data from multiple sensors (cameras, thermal, proximity) for comprehensive hazard detection with minimal false positives.",
-    technologies: ["Kalman Filter", "Data Fusion", "RPi.GPIO"],
+      "Manages GPIO interactions, servo motor control, LED feedback, and coordinates the overall robot behavior state machine.",
+    technologies: ["RPi.GPIO", "pigpio", "asyncio"],
   },
   {
-    name: "Data Logging & Analytics",
+    name: "Data & Configuration",
     icon: Database,
     language: "Python / JSON",
     description:
-      "Records hazard events, response times, and trends to build safety insights and enable community-level threat pattern analysis.",
-    technologies: ["SQLite", "JSON Storage", "Analytics"],
+      "Handles configuration management, language model prompts, conversation history, and logging for debugging and improvement.",
+    technologies: ["SQLite", "JSON Config", "Python Logging"],
   },
 ]
 
@@ -78,7 +78,8 @@ export function SoftwareSection() {
             Software
           </h2>
           <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-            The AI modules and software architecture that enable real-time hazard detection, instant alerts, and intelligent safety responses.
+            The software architecture and AI modules that power Bondhu&apos;s
+            intelligence and conversational abilities.
           </p>
         </div>
 

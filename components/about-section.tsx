@@ -4,32 +4,32 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Camera, Zap, Bell, ClipboardList } from "lucide-react"
+import { Mic, Brain, MessageSquare, Volume2 } from "lucide-react"
 
 const steps = [
   {
-    icon: Camera,
-    title: "Real-Time Detection",
+    icon: Mic,
+    title: "Speech to Text",
     description:
-      "Bondhu continuously monitors the environment using advanced computer vision and multiple sensors to detect potential hazards and safety threats.",
+      "Bondhu listens to the user through a microphone and converts spoken words into text using advanced speech recognition.",
   },
   {
-    icon: Zap,
-    title: "AI Analysis",
+    icon: Brain,
+    title: "NLP & Understanding",
     description:
-      "Machine learning models analyze sensor data in real-time to identify dangers like fire, chemical spills, structural failures, and other critical hazards.",
+      "Natural Language Processing analyzes the text to understand context, intent, and meaning across different languages.",
   },
   {
-    icon: Bell,
-    title: "Alert & Communication",
+    icon: MessageSquare,
+    title: "LLM Processing",
     description:
-      "Upon detection, Bondhu issues immediate alerts in Bengali, warning nearby individuals of the danger with clear, understandable instructions.",
+      "A Large Language Model generates intelligent responses, translates between languages, and enables natural conversation.",
   },
   {
-    icon: ClipboardList,
-    title: "Recommendations",
+    icon: Volume2,
+    title: "Text to Speech",
     description:
-      "Provides specific, actionable recommendations to mitigate risks, including evacuation routes, emergency procedures, and preventive measures.",
+      "The processed response is converted back into natural-sounding speech, allowing Bondhu to talk back to the user.",
   },
 ]
 
@@ -43,10 +43,14 @@ export function AboutSection() {
             About the Project
           </p>
           <h2 className="mt-3 text-balance text-3xl font-bold tracking-tight sm:text-4xl">
-            How Bondhu Works
+            What is Bondhu?
           </h2>
           <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-            Bondhu combines computer vision, sensor fusion, and advanced AI to continuously monitor environments and protect communities. It detects dangers in real-time and communicates critical safety information in Bengali.
+            Bondhu (meaning &ldquo;friend&rdquo; in Bengali) is an AI-powered
+            talking robot designed to break language barriers. It combines
+            robotics with artificial intelligence to create a companion that can
+            listen, understand, translate, and respond in real time — making
+            communication accessible for everyone.
           </p>
         </div>
 

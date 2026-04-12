@@ -1,49 +1,49 @@
 import { Badge } from "@/components/ui/badge"
 import {
-  Camera,
-  AlertTriangle,
+  Languages,
+  Mic,
+  Users,
+  BotMessageSquare,
+  Accessibility,
   Zap,
-  MapPin,
-  BarChart3,
-  Volume2,
 } from "lucide-react"
 
 const features = [
   {
-    icon: Camera,
-    title: "Advanced Vision Sensors",
+    icon: Mic,
+    title: "Real-Time Voice Translation",
     description:
-      "High-resolution camera systems with thermal imaging detect fires, hazards, and emergency situations in real-time.",
+      "Instantly translates spoken language in real time, enabling seamless cross-language communication.",
   },
   {
-    icon: AlertTriangle,
-    title: "Multi-Hazard Detection",
+    icon: Languages,
+    title: "Multilingual Support",
     description:
-      "Identifies chemical spills, structural damage, electrical hazards, flooding, and other critical safety threats instantly.",
+      "Supports multiple languages including Bengali, English, Hindi, Arabic, and more with high accuracy.",
+  },
+  {
+    icon: Users,
+    title: "Human Interaction",
+    description:
+      "Designed to interact naturally with humans through voice, making conversations intuitive and friendly.",
+  },
+  {
+    icon: BotMessageSquare,
+    title: "AI Conversation Ability",
+    description:
+      "Powered by Large Language Models, Bondhu can hold intelligent conversations and answer questions.",
+  },
+  {
+    icon: Accessibility,
+    title: "Assistive Technology",
+    description:
+      "Helps people with language barriers, hearing difficulties, or in multilingual environments to communicate effectively.",
   },
   {
     icon: Zap,
-    title: "Instant Response System",
+    title: "Low Latency Processing",
     description:
-      "Delivers immediate alerts and emergency notifications within milliseconds of hazard detection for rapid response.",
-  },
-  {
-    icon: MapPin,
-    title: "Spatial Awareness",
-    description:
-      "Provides precise location data of detected hazards, helping emergency teams respond faster and more effectively.",
-  },
-  {
-    icon: BarChart3,
-    title: "Data Analytics & Insights",
-    description:
-      "Generates detailed safety reports and trends to help communities implement preventive measures and reduce risk.",
-  },
-  {
-    icon: Volume2,
-    title: "Bengali Language Support",
-    description:
-      "Communicates critical safety information in Bengali, ensuring all community members understand the dangers and recommendations.",
+      "Optimized pipeline ensures fast response times for a natural, fluid conversational experience.",
   },
 ]
 
@@ -60,7 +60,8 @@ export function FeaturesSection() {
             Key Features
           </h2>
           <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-            Bondhu combines advanced sensors, computer vision, and AI to deliver critical safety capabilities for hazard detection and community protection.
+            Bondhu combines cutting-edge AI with practical robotics to deliver
+            powerful features for real-world use.
           </p>
         </div>
 
@@ -84,12 +85,12 @@ export function FeaturesSection() {
         {/* Tags */}
         <div className="mt-12 flex flex-wrap justify-center gap-2">
           {[
-            "Computer Vision",
-            "Hazard Detection",
-            "Thermal Imaging",
-            "Bengali NLP",
+            "Speech Recognition",
+            "NLP",
+            "Machine Translation",
+            "Voice Synthesis",
             "Robotics",
-            "Real-time Analytics",
+            "Edge AI",
           ].map((tag) => (
             <Badge key={tag} variant="secondary" className="text-xs">
               {tag}
