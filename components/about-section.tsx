@@ -9,27 +9,27 @@ import { Mic, Brain, MessageSquare, Volume2 } from "lucide-react"
 const steps = [
   {
     icon: Mic,
-    title: "Speech to Text",
+    title: "Listens & Observes",
     description:
-      "Bondhu listens to the user through a microphone and converts spoken words into text using advanced speech recognition.",
+      "Bondhu continuously monitors the environment through microphones and sensors, detecting spoken words and environmental factors to identify potential dangers.",
   },
   {
     icon: Brain,
-    title: "NLP & Understanding",
+    title: "Analyzes Threats",
     description:
-      "Natural Language Processing analyzes the text to understand context, intent, and meaning across different languages.",
+      "Advanced AI analyzes audio, language patterns, and environmental data to detect dangers like accidents, emergencies, threats, and critical situations in real-time.",
   },
   {
     icon: MessageSquare,
-    title: "LLM Processing",
+    title: "Generates Recommendations",
     description:
-      "A Large Language Model generates intelligent responses, translates between languages, and enables natural conversation.",
+      "Large Language Models process detected dangers and generate intelligent, context-aware safety recommendations in Bengali and multiple languages.",
   },
   {
     icon: Volume2,
-    title: "Text to Speech",
+    title: "Alert & Advise",
     description:
-      "The processed response is converted back into natural-sounding speech, allowing Bondhu to talk back to the user.",
+      "Bondhu alerts residents immediately and provides voice-based safety recommendations, guiding people through dangerous situations with clear instructions.",
   },
 ]
 
@@ -46,11 +46,7 @@ export function AboutSection() {
             What is Bondhu?
           </h2>
           <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-            Bondhu (meaning &ldquo;friend&rdquo; in Bengali) is an AI-powered
-            talking robot designed to break language barriers. It combines
-            robotics with artificial intelligence to create a companion that can
-            listen, understand, translate, and respond in real time — making
-            communication accessible for everyone.
+            Bondhu is an intelligent Bengali dialect-based humanoid robot designed to detect dangers and provide safety recommendations. With advanced AI and sensory capabilities, it identifies emergencies and guides people to safety through voice-based intelligent recommendations.
           </p>
         </div>
 

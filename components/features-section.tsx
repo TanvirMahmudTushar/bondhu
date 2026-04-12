@@ -11,39 +11,39 @@ import {
 const features = [
   {
     icon: Mic,
-    title: "Real-Time Voice Translation",
+    title: "Danger Detection",
     description:
-      "Instantly translates spoken language in real time, enabling seamless cross-language communication.",
+      "Advanced sensors and AI detect various types of dangers including accidents, fires, chemical leaks, threats, and emergency situations in real-time.",
   },
   {
     icon: Languages,
-    title: "Multilingual Support",
+    title: "Bengali Dialect Support",
     description:
-      "Supports multiple languages including Bengali, English, Hindi, Arabic, and more with high accuracy.",
+      "Native Bengali dialect understanding ensures clear communication and recommendations that resonate with local communities and cultures.",
   },
   {
     icon: Users,
-    title: "Human Interaction",
+    title: "Immediate Response",
     description:
-      "Designed to interact naturally with humans through voice, making conversations intuitive and friendly.",
+      "Detects emergencies and alerts residents instantly, providing critical guidance when every second matters for safety.",
   },
   {
     icon: BotMessageSquare,
-    title: "AI Conversation Ability",
+    title: "Smart Recommendations",
     description:
-      "Powered by Large Language Models, Bondhu can hold intelligent conversations and answer questions.",
+      "AI-powered system generates context-aware safety recommendations tailored to specific dangerous situations and environments.",
   },
   {
     icon: Accessibility,
-    title: "Assistive Technology",
+    title: "Safety for Everyone",
     description:
-      "Helps people with language barriers, hearing difficulties, or in multilingual environments to communicate effectively.",
+      "Designed to protect all family members including children, elderly, and those with disabilities through accessible safety alerts and guidance.",
   },
   {
     icon: Zap,
-    title: "Low Latency Processing",
+    title: "Real-Time Assessment",
     description:
-      "Optimized pipeline ensures fast response times for a natural, fluid conversational experience.",
+      "Continuous monitoring and rapid threat assessment ensures families receive safety recommendations before situations escalate.",
   },
 ]
 
@@ -60,8 +60,8 @@ export function FeaturesSection() {
             Key Features
           </h2>
           <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-            Bondhu combines cutting-edge AI with practical robotics to deliver
-            powerful features for real-world use.
+            Bondhu combines cutting-edge AI with practical robotics to detect
+            dangers and provide intelligent safety recommendations for families.
           </p>
         </div>
 

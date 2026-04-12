@@ -16,51 +16,51 @@ import {
 
 const softwareModules = [
   {
-    name: "Speech-to-Text Engine",
+    name: "Audio Threat Detection",
     icon: Mic,
     language: "Python",
     description:
-      "Converts spoken audio input into text using Whisper-based ASR models, optimized for Bengali dialects and multilingual input.",
-    technologies: ["OpenAI Whisper", "PyAudio", "NumPy"],
+      "Detects danger indicators from audio including breaking glass, screams, gunshots, and emergency sirens using advanced audio classification models.",
+    technologies: ["OpenAI Whisper", "AudioSet", "YAMNet"],
   },
   {
-    name: "NLP Processing Pipeline",
+    name: "Danger Analysis Engine",
     icon: Brain,
     language: "Python",
     description:
-      "Analyzes transcribed text for intent recognition, language detection, and context understanding before passing to the LLM.",
-    technologies: ["spaCy", "NLTK", "LangDetect"],
+      "Analyzes audio and environmental data using NLP to identify types of dangers (medical, environmental, security) and assess threat levels.",
+    technologies: ["spaCy", "TensorFlow", "NLTK"],
   },
   {
-    name: "LLM Integration",
+    name: "Recommendation Generator",
     icon: MessageSquare,
     language: "Python",
     description:
-      "Connects to Large Language Models for intelligent response generation, translation, and contextual conversation management.",
-    technologies: ["LangChain", "OpenAI API", "Prompt Engineering"],
+      "Generates intelligent, context-aware safety recommendations based on detected dangers using Large Language Models in Bengali and multiple languages.",
+    technologies: ["LangChain", "OpenAI API", "Knowledge Base"],
   },
   {
-    name: "Text-to-Speech Output",
+    name: "Voice Alert System",
     icon: Volume2,
     language: "Python",
     description:
-      "Converts generated text responses into natural-sounding speech output in the target language using neural TTS models.",
+      "Converts safety recommendations into natural-sounding voice alerts in Bengali dialect, ensuring clear communication during emergencies.",
     technologies: ["gTTS", "Pyttsx3", "SoundDevice"],
   },
   {
-    name: "Robot Control System",
+    name: "Robotics Control",
     icon: Code2,
     language: "Python",
     description:
-      "Manages GPIO interactions, servo motor control, LED feedback, and coordinates the overall robot behavior state machine.",
+      "Manages GPIO interactions for sensors, visual alerts through LEDs, and coordinates the robot's response behavior during detected dangers.",
     technologies: ["RPi.GPIO", "pigpio", "asyncio"],
   },
   {
-    name: "Data & Configuration",
+    name: "Safety Database",
     icon: Database,
     language: "Python / JSON",
     description:
-      "Handles configuration management, language model prompts, conversation history, and logging for debugging and improvement.",
+      "Maintains threat detection history, safety protocols, emergency contacts, and logs for continuous improvement of danger detection accuracy.",
     technologies: ["SQLite", "JSON Config", "Python Logging"],
   },
 ]
@@ -79,7 +79,7 @@ export function SoftwareSection() {
           </h2>
           <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
             The software architecture and AI modules that power Bondhu&apos;s
-            intelligence and conversational abilities.
+            danger detection and safety recommendation capabilities.
           </p>
         </div>
 
