@@ -10,6 +10,7 @@ const basePath = process.env.NODE_ENV === "production" ? "/bondhu" : ""
 
 export function HeroSection() {
   const [isVideoOpen, setIsVideoOpen] = useState(false)
+  const [isVideo2Open, setIsVideo2Open] = useState(false)
 
   return (
     <>
@@ -61,6 +62,14 @@ export function HeroSection() {
                 <Play className="mr-2 h-4 w-4" />
                 Watch Demo
               </Button>
+              <Button
+                variant="outline"
+                size="lg"
+                onClick={() => setIsVideo2Open(true)}
+              >
+                <Play className="mr-2 h-4 w-4" />
+                Watch Demo 2
+              </Button>
             </div>
           </div>
 
@@ -93,6 +102,25 @@ export function HeroSection() {
           </button>
           <video
             src={`${basePath}/bondhu_demo.mp4`}
+            autoPlay
+            controls
+            className="w-full h-full"
+          />
+        </DialogContent>
+      </Dialog>
+
+      {/* Video Modal 2 */}
+      <Dialog open={isVideo2Open} onOpenChange={setIsVideo2Open}>
+        <DialogContent className="max-w-4xl w-full aspect-video p-0 border-0">
+          <DialogTitle className="sr-only">Knife Detection Demo Video</DialogTitle>
+          <button
+            onClick={() => setIsVideo2Open(false)}
+            className="absolute right-4 top-4 z-50 rounded-full bg-black/50 p-2 hover:bg-black/70 transition-colors"
+          >
+            <X className="h-4 w-4 text-white" />
+          </button>
+          <video
+            src={`${basePath}/KNIFEDETECTED.mp4`}
             autoPlay
             controls
             className="w-full h-full"
