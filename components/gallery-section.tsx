@@ -9,31 +9,31 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 const galleryItems = [
   {
-    src: "/img (1).webp",
+    src: "/img1.webp",
     alt: "Bondhu robot close-up view",
     caption: "Bondhu Robot Structure",
     category: "robot",
   },
   {
-    src: "/img (2).webp",
+    src: "/img2.webp",
     alt: "Bondhu robot with sensors",
     caption: "Sensor Configuration",
     category: "robot",
   },
   {
-    src: "/img (3).webp",
+    src: "/img3.webp",
     alt: "Bondhu detecting danger demo",
     caption: "Danger Detection Demo",
     category: "demo",
   },
   {
-    src: "/img (4).webp",
+    src: "/img4.webp",
     alt: "Bondhu build and assembly process",
     caption: "Construction Phase",
     category: "build",
   },
   {
-    src: "/img (5).webp",
+    src: "/img5.webp",
     alt: "Bondhu final assembly and testing",
     caption: "Final Assembly & Testing",
     category: "build",
