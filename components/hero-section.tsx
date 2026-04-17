@@ -83,11 +83,11 @@ export function HeroSection() {
           </div>
 
           {/* Hero image */}
-          <div className="flex justify-center">
+          <div className="flex flex-col items-center justify-center gap-4">
             <div className="relative overflow-hidden rounded-2xl border border-border">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={`${basePath}/bondhu.webp`}
+                src={`${basePath}/bondhu.png`}
                 alt="Bondhu - Bengali Dialect Based Humanoid Robot"
                 width={560}
                 height={420}
@@ -95,6 +95,17 @@ export function HeroSection() {
               />
               <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-foreground/5" />
             </div>
+            <p className="text-sm text-muted-foreground text-center max-w-sm">
+              The robot for previous version of Bondhu was different.{" "}
+              <a
+                href="https://youtu.be/y2OfyVT4Smc?si=4OXAgeVIz9TRWElF"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:underline font-medium"
+              >
+                Click to check here
+              </a>
+            </p>
           </div>
         </div>
       </section>
