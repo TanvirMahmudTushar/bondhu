@@ -29,12 +29,6 @@ const galleryItems = [
     category: "demo",
   },
   {
-    src: `${basePath}/img4.webp`,
-    alt: "Bondhu build and assembly process",
-    caption: "Construction Phase",
-    category: "build",
-  },
-  {
     src: `${basePath}/img5.webp`,
     alt: "Bondhu final assembly and testing",
     caption: "Final Assembly & Testing",
