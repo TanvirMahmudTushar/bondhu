@@ -70,6 +70,15 @@ export function HeroSection() {
                 <Play className="mr-2 h-4 w-4" />
                 Watch Demo 2
               </Button>
+              <Button asChild size="lg">
+                <a
+                  href={`${basePath}/instrumentation.pdf`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Read the Paper
+                </a>
+              </Button>
             </div>
           </div>
 
